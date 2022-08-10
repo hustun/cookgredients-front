@@ -1,0 +1,114 @@
+@use "sass:color";
+@import "/src/Variables.scss";
+
+/* .neutralBg {
+  background: $neutral-100;
+}
+
+.textNeutral {
+  color: $neutral-50;
+}
+
+.fontPrimary {
+  color: $primary;
+}
+
+.fontSoft {
+  color: rgba($primary-soft, $semi-opaque);
+} */
+
+$edge: Bottom, Left, Right, Top;
+
+@each $i in $edge {
+  .primaryBorder#{$i} {
+    border-#{$i}: 2px solid rgba($primary, $semi-transparent);
+  }
+}
+
+$tones: 50, 75, 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+@each $i in $tones {
+  .neutralBackground#{$i} {
+    background: color.adjust(
+      $neutral-base,
+      $lightness: - color.lightness($neutral-base) + 100 - ($i/10)
+    );
+  }
+  .primaryBackground#{$i} {
+    background: color.adjust(
+      $primary,
+      $lightness: - color.lightness($primary) + 100 - ($i/10)
+    );
+  }
+  .neutralText#{$i} {
+    color: color.adjust(
+      $neutral-base,
+      $lightness: - color.lightness($neutral-base) + 100 - ($i/10)
+    );
+  }
+  .primaryText#{$i} {
+    color: color.adjust(
+      $primary,
+      $lightness: - color.lightness($primary) + 100 - ($i/10)
+    );
+  }
+  @media (prefers-color-scheme: dark) {
+    .neutralBackgroundDark#{$i} {
+      background: color.adjust(
+        $neutral-base,
+        $lightness: - color.lightness($neutral-base) + 100 - ($i/10)
+      );
+    }
+    .primaryBackgroundDark#{$i} {
+      background: color.adjust(
+        $primary,
+        $lightness: - color.lightness($primary) + 100 - ($i/10)
+      );
+    }
+    .neutralTextDark#{$i} {
+      color: color.adjust(
+        $neutral-base,
+        $lightness: - color.lightness($neutral-base) + 100 - ($i/10)
+      );
+    }
+    .primaryTextDark#{$i} {
+      color: color.adjust(
+        $primary,
+        $lightness: - color.lightness($primary) + 100 - ($i/10)
+      );
+    }
+  }
+}
+
+.hoverPrimaryBackground:hover {
+  background-color: color.adjust(
+    $primary,
+    $lightness: - color.lightness($primary) + 92.5
+  );
+}
+
+/* width */
+.scrollbarPrimary::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.scrollbarPrimary::-webkit-scrollbar-thumb {
+  background-color: color.adjust(
+    $primary,
+    $lightness: - color.lightness($primary) + 50
+  ) !important;
+  border-radius: 2px;
+}
+
+.scrollbarPrimary::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle on hover */
+.scrollbarPrimary::-webkit-scrollbar-thumb:active {
+  background: color.adjust(
+    $primary,
+    $lightness: - color.lightness($primary) + 50
+  ) !important;
+}

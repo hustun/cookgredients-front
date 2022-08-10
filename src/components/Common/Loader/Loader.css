@@ -1,0 +1,103 @@
+.bounce-0 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 0ms;
+          animation: 2000ms bounce-char infinite ease-in-out 0ms;
+}
+
+.bounce-100 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 100ms;
+          animation: 2000ms bounce-char infinite ease-in-out 100ms;
+}
+
+.bounce-200 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 200ms;
+          animation: 2000ms bounce-char infinite ease-in-out 200ms;
+}
+
+.bounce-300 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 300ms;
+          animation: 2000ms bounce-char infinite ease-in-out 300ms;
+}
+
+.bounce-400 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 400ms;
+          animation: 2000ms bounce-char infinite ease-in-out 400ms;
+}
+
+.bounce-500 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 500ms;
+          animation: 2000ms bounce-char infinite ease-in-out 500ms;
+}
+
+.bounce-600 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 600ms;
+          animation: 2000ms bounce-char infinite ease-in-out 600ms;
+}
+
+.bounce-700 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 700ms;
+          animation: 2000ms bounce-char infinite ease-in-out 700ms;
+}
+
+.bounce-800 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 800ms;
+          animation: 2000ms bounce-char infinite ease-in-out 800ms;
+}
+
+.bounce-900 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 900ms;
+          animation: 2000ms bounce-char infinite ease-in-out 900ms;
+}
+
+.bounce-1000 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 1000ms;
+          animation: 2000ms bounce-char infinite ease-in-out 1000ms;
+}
+
+.bounce-1100 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 1100ms;
+          animation: 2000ms bounce-char infinite ease-in-out 1100ms;
+}
+
+.bounce-1200 {
+  -webkit-animation: 2000ms bounce-char infinite ease-in-out 1200ms;
+          animation: 2000ms bounce-char infinite ease-in-out 1200ms;
+}
+
+@-webkit-keyframes bounce-char {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  6% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  12% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce-char {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  6% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  12% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=Loader.css.map */

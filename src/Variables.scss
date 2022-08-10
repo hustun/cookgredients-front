@@ -1,0 +1,13 @@
+@use "sass:color";
+
+$primary: rgb(21, 64, 156);
+$primary-soft: lighten($primary, 15%);
+
+$neutral-base: hsl(20, 10%, 6%);
+
+$black: rgba(51, 51, 51, 1);
+
+$transparent: 0.2;
+$semi-transparent: 0.4;
+$semi-opaque: 0.7;
+$opaque: 1;

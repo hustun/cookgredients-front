@@ -1,0 +1,34 @@
+@use "sass:color";
+@import "/src/Styles.module.scss";
+
+$neutral-gradient-1: color.adjust(
+  $neutral-base,
+  $lightness: - color.lightness($neutral-base) + 95
+);
+
+$neutral-gradient-2: color.adjust(
+  $neutral-base,
+  $lightness: - color.lightness($neutral-base) + 90
+);
+
+.topHighlight {
+  -webkit-box-shadow: -14px -12px 22px -6px
+      rgba($neutral-gradient-1, $semi-transparent),
+    0 20px 25px -5px rgba($black, $transparent),
+    0 8px 10px -6px rgba($black, $transparent);
+  box-shadow: -14px -12px 22px -6px rgba($neutral-gradient-1, $semi-transparent),
+    0 20px 25px -5px rgba($black, $transparent),
+    0 8px 10px -6px rgba($black, $transparent);
+}
+
+.primaryGradient {
+  background: linear-gradient(180deg, $primary-soft 0%, $primary 100%);
+}
+
+.neutralGradient {
+  background: linear-gradient(
+    180deg,
+    $neutral-gradient-1 0%,
+    $neutral-gradient-2 100%
+  );
+}

@@ -1,0 +1,10 @@
+{
+    "title": "test",
+    "ingredientSearch": {
+        "pageTitle": "Cookgredients - Search by Ingredients",
+        "title": "Cookgredients",
+        "subtitle": "Search by Ingredients",
+        "ingredientListTitle": "Ingredients",
+        "searchPlaceholder": "Enter your ingredients"
+    }
+}

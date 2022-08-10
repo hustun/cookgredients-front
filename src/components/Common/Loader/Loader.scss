@@ -1,0 +1,15 @@
+$grid: 0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200;
+
+@each $i in $grid {
+  .bounce-#{$i}{
+    animation: 2000ms bounce-char infinite ease-in-out #{$i}ms;
+  }
+}
+
+@keyframes bounce-char {
+    0% { transform: translateY(0); }
+    6% { transform: translateY(-8px); }
+    12% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+  }
+  

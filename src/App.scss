@@ -1,0 +1,35 @@
+@use "sass:color";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import "/src/Variables.scss";
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.bg-l {
+  background-color: white;
+}
+
+.bg-d {
+  background-color: black;
+}
+
+input::placeholder {
+  color: rgba($primary, $semi-opaque);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+::selection {
+  background: rgba($primary, $opaque);
+  border-radius: 4px;
+  color: color.adjust(
+    $neutral-base,
+    $lightness: - color.lightness($neutral-base) + 95
+  );
+}
